@@ -1,0 +1,796 @@
+[
+    {
+        "category": "Computer Science",
+        "sub_categories": [
+            {
+                "sub_category": "Programming Languages",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "C++",
+                        "questions": [
+                            {
+                                "question": "What is the output of cout << 2 + 'A'; in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "2A"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "67"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "C2"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "Compilation Error"
+                                    }
+                                ],
+                                "correct_option": 2
+                            },
+                            {
+                                "question": "Which keyword is used to prevent a function from modifying member variables in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "mutable"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "static"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "const"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "volatile"
+                                    }
+                                ],
+                                "correct_option": 3
+                            },
+                            {
+                                "question": "What is the size of an empty class in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "0 bytes"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "1 byte"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "Compiler-dependent"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "Undefined behavior"
+                                    }
+                                ],
+                                "correct_option": 2
+                            },
+                            {
+                                "question": "Which of the following is true about C++ constructors?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "They must have a return type"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "They can be virtual"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "They are automatically called when an object is created"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "They cannot be overloaded"
+                                    }
+                                ],
+                                "correct_option": 3
+                            },
+                            {
+                                "question": "What is the default access specifier for class members in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "public"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "private"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "protected"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "None of the above"
+                                    }
+                                ],
+                                "correct_option": 2
+                            }
+                        ]
+                    },
+                    {
+                        "quiz_topic": "Java",
+                        "questions": [
+                            {
+                                "question": "What is the output of cout << 2 + 'A'; in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "2A"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "67"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "C2"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "Compilation Error"
+                                    }
+                                ],
+                                "correct_option": 2
+                            },
+                            {
+                                "question": "Which keyword is used to prevent a function from modifying member variables in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "mutable"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "static"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "const"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "volatile"
+                                    }
+                                ],
+                                "correct_option": 3
+                            },
+                            {
+                                "question": "What is the size of an empty class in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "0 bytes"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "1 byte"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "Compiler-dependent"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "Undefined behavior"
+                                    }
+                                ],
+                                "correct_option": 2
+                            },
+                            {
+                                "question": "Which of the following is true about C++ constructors?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "They must have a return type"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "They can be virtual"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "They are automatically called when an object is created"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "They cannot be overloaded"
+                                    }
+                                ],
+                                "correct_option": 3
+                            },
+                            {
+                                "question": "What is the default access specifier for class members in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "public"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "private"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "protected"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "None of the above"
+                                    }
+                                ],
+                                "correct_option": 2
+                            }
+                        ]
+                    },
+                    {
+                        "quiz_topic": "Python",
+                        "questions": [
+                            {
+                                "question": "What is the output of cout << 2 + 'A'; in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "2A"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "67"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "C2"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "Compilation Error"
+                                    }
+                                ],
+                                "correct_option": 2
+                            },
+                            {
+                                "question": "Which keyword is used to prevent a function from modifying member variables in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "mutable"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "static"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "const"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "volatile"
+                                    }
+                                ],
+                                "correct_option": 3
+                            },
+                            {
+                                "question": "What is the size of an empty class in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "0 bytes"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "1 byte"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "Compiler-dependent"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "Undefined behavior"
+                                    }
+                                ],
+                                "correct_option": 2
+                            },
+                            {
+                                "question": "Which of the following is true about C++ constructors?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "They must have a return type"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "They can be virtual"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "They are automatically called when an object is created"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "They cannot be overloaded"
+                                    }
+                                ],
+                                "correct_option": 3
+                            },
+                            {
+                                "question": "What is the default access specifier for class members in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "public"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "private"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "protected"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "None of the above"
+                                    }
+                                ],
+                                "correct_option": 2
+                            }
+                        ]
+                    },
+                    {
+                        "quiz_topic": "C#",
+                        "questions": [
+                            {
+                                "question": "What is the output of cout << 2 + 'A'; in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "2A"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "67"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "C2"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "Compilation Error"
+                                    }
+                                ],
+                                "correct_option": 2
+                            },
+                            {
+                                "question": "Which keyword is used to prevent a function from modifying member variables in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "mutable"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "static"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "const"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "volatile"
+                                    }
+                                ],
+                                "correct_option": 3
+                            },
+                            {
+                                "question": "What is the size of an empty class in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "0 bytes"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "1 byte"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "Compiler-dependent"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "Undefined behavior"
+                                    }
+                                ],
+                                "correct_option": 2
+                            },
+                            {
+                                "question": "Which of the following is true about C++ constructors?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "They must have a return type"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "They can be virtual"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "They are automatically called when an object is created"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "They cannot be overloaded"
+                                    }
+                                ],
+                                "correct_option": 3
+                            },
+                            {
+                                "question": "What is the default access specifier for class members in C++?",
+                                "options": [
+                                    {
+                                        "option_id": 1,
+                                        "value": "public"
+                                    },
+                                    {
+                                        "option_id": 2,
+                                        "value": "private"
+                                    },
+                                    {
+                                        "option_id": 3,
+                                        "value": "protected"
+                                    },
+                                    {
+                                        "option_id": 4,
+                                        "value": "None of the above"
+                                    }
+                                ],
+                                "correct_option": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "sub_category": "Data Structures and Algorithms",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Arrays & Strings",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Trees",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Graphs",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Web Development",
+        "sub_categories": [
+            {
+                "sub_category": "Frontend Development",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "HTML & CSS",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "ReactJS",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Angular",
+                        "questions": []
+                    }
+                ]
+            },
+            {
+                "sub_category": "Backend Development",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Node.js",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Express.js",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "ASP.NET",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Cybersecurity",
+        "sub_categories": [
+            {
+                "sub_category": "Cryptography",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Hashing Algorithms",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Symmetric Encryption",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Asymmetric Encryption",
+                        "questions": []
+                    }
+                ]
+            },
+            {
+                "sub_category": "Network Security",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Firewalls & VPNs",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Ethical Hacking",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Artificial Intelligence & Machine Learning",
+        "sub_categories": [
+            {
+                "sub_category": "Machine Learning",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Supervised Learning",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Unsupervised Learning",
+                        "questions": []
+                    }
+                ]
+            },
+            {
+                "sub_category": "AI Concepts",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Natural Language Processing",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Computer Vision",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Cloud Computing",
+        "sub_categories": [
+            {
+                "sub_category": "Cloud Providers",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "AWS",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Microsoft Azure",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Google Cloud Platform",
+                        "questions": []
+                    }
+                ]
+            },
+            {
+                "sub_category": "Cloud Concepts",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Virtual Machines",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Cloud Security",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Databases",
+        "sub_categories": [
+            {
+                "sub_category": "SQL Databases",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "MySQL",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "PostgreSQL",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "SQL Server",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "SQLite",
+                        "questions": []
+                    }
+                ]
+            },
+            {
+                "sub_category": "NoSQL Databases",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "MongoDB",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Redis",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Cassandra",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Operating Systems",
+        "sub_categories": [
+            {
+                "sub_category": "Windows & Linux",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Windows Fundamentals",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Linux Commands",
+                        "questions": []
+                    }
+                ]
+            },
+            {
+                "sub_category": "OS Concepts",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Scheduling Algorithms",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Deadlocks",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Software Engineering",
+        "sub_categories": [
+            {
+                "sub_category": "Software Development Methodologies",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Agile & Scrum",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "DevOps",
+                        "questions": []
+                    }
+                ]
+            },
+            {
+                "sub_category": "Software Design Patterns",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Creational Design Patterns",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Behavioral Design Patterns",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Networking",
+        "sub_categories": [
+            {
+                "sub_category": "Networking Fundamentals",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "OSI Model",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "TCP/IP Protocol",
+                        "questions": []
+                    }
+                ]
+            },
+            {
+                "sub_category": "Advanced Networking",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Wireless Networks",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Network Troubleshooting",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "category": "DevOps & Automation",
+        "sub_categories": [
+            {
+                "sub_category": "DevOps Tools",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Docker",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Kubernetes",
+                        "questions": []
+                    }
+                ]
+            },
+            {
+                "sub_category": "CI/CD & Automation",
+                "quiz_topics": [
+                    {
+                        "quiz_topic": "Continuous Integration",
+                        "questions": []
+                    },
+                    {
+                        "quiz_topic": "Monitoring & Logging",
+                        "questions": []
+                    }
+                ]
+            }
+        ]
+    }
+]

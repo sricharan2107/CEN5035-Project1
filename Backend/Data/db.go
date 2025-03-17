@@ -6,10 +6,11 @@ import (
 	"log"
 	"os"
 	"time"
+
+	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"github.com/joho/godotenv"
 )
 
 var Client *mongo.Client
@@ -18,7 +19,7 @@ var DBName string
 // ConnectToDB connects to MongoDB Atlas and sets the global Client variable
 func ConnectToDB() {
 
-  err := godotenv.Load()
+	err := godotenv.Load()
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
@@ -69,3 +70,4 @@ func GetDatabase(dbName string) *mongo.Database {
 func GetCollection(dbName, collectionName string) *mongo.Collection {
 	return GetDatabase(dbName).Collection(collectionName)
 }
+

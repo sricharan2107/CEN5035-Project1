@@ -1,3 +1,16 @@
+
+.signup-component{
+  font-family: 'Poppins', sans-serif;
+    background: #e4ebf4;  
+    /* background: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    height: 115vh;
+}
+
 .signup-section {
   background: #ffffff;
   padding: 30px;
@@ -34,12 +47,19 @@
   border-radius: 5px;
 }
 
-.signup-section .gender-options {
-  display: flex;
-  text-align: left;
-  gap: 10px;
-  margin-top: 5px;
+.signup-section .gender-option {
+  display: inline-flex;   /* Use inline-flex for inline display */
+  align-items: center;    /* Align items vertically */
+  gap: 5px;              /* Space between radio button and label text */
+  margin-right: 15px;    /* Space between each gender option */
 }
+
+/* Optional: If you want to remove the box around the gender options */
+.signup-section .form-group {
+  margin-bottom: 15px;   /* Space between form groups */
+}
+
+
 
 .signup-section .gender-options label{
   display:flex;
@@ -83,3 +103,4 @@
   margin-top: 2px;
   text-align:center;
 }
+

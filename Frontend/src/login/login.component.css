@@ -1,3 +1,15 @@
+
+.login-component{
+  font-family: 'Poppins', sans-serif;
+    background: #e4ebf4;  
+    /* background: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    height: 115vh;
+}
 .login-section {
   background: #ffffff;
   padding: 30px;

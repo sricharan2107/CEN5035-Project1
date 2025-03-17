@@ -10,14 +10,15 @@
     text-shadow: 0 0 10px rgba(93, 64, 55, 1); 
   }
   
-body {
+
+/* body {
     font-family: 'Poppins', sans-serif;
     background: #e4ebf4;  
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin: 0;
     height: 115vh;
-  }
-  
+} */

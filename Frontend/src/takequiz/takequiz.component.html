@@ -1,0 +1,79 @@
+<!-- <app-navbar></app-navbar> -->
+
+<div class="takequiz-container">
+    <!-- Left Panel: Topic List -->
+    <div class="quiz-sidebar">
+        <h3> {{ category }} > {{ subcategory }}</h3>
+        <ul>
+            <li *ngFor="let topic of quizTopicsList" [class.active]="quizTopic === topic">
+                <a [routerLink]="['/', category, subcategory, topic, 'takequiz']"
+                   (click)="selectTopic(topic)">
+                    {{ topic }}
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Right Panel: Quiz Form -->
+    <div class="quiz-content" *ngIf="!loading">
+        <div *ngIf="quizTopic && quizData && currentQuestionIndex < quizData.questions.length; else welcomeMessage">
+
+            <div *ngIf="quizData && !quizStarted">
+                <h2>Welcome to the Quiz of {{ quizData.quiz_topic }}!</h2>
+                <button class="start-quiz-btn" (click)="startQuiz()">Start Quiz</button>
+            </div>
+            <div *ngIf="quizStarted && quizData">
+                <!-- Progress Bar -->
+                <div class="quiz-progress">
+                    <span>Question {{ currentQuestionIndex + 1 }}/{{ quizData.questions.length }}</span>
+                    <div class="progress-bar">
+                        <div class="progress" [style.width]="progressWidth()"></div>
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <h2 class="question-text">{{quizData.questions[currentQuestionIndex].question }}</h2>
+
+                <!-- Options -->
+                <div class="options">
+                    <button *ngFor="let option of quizData.questions[currentQuestionIndex].options; let i = index"
+                            class="option-btn"
+                            [class.selected]="selectedAnswer === option.option_id"
+                            (click)="selectAnswer(option.option_id)">
+                        <span class="option-label">{{ getOptionLabel(i) }}</span>
+                        <span class="option-text">{{ option.value }}</span>
+                    </button>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="next-btn" *ngIf="!isLastQuestion()" (click)="nextQuestion()" [disabled]="!selectedAnswer">Next</button>
+                <button class="submit-btn" *ngIf="isLastQuestion()" (click)="submitQuiz()" [disabled]="!selectedAnswer">Submit</button>
+
+            </div>
+        </div>
+
+        <ng-template #welcomeMessage>
+            <h2>Welcome to the Quizzes to test your Knowledge in {{ subcategory }}!</h2>
+        </ng-template>
+    </div>
+
+   <!-- Modal Popup -->
+    <div class="modal-overlay" *ngIf="showModal">
+        <div class="modal-content">
+            <h2>Quiz Completed!</h2>
+            <h2 *ngIf="score === (quizData?.questions?.length || 0)">
+                🎉 Congratulations! 🎉
+            </h2>
+            <h2 *ngIf="score < (quizData?.questions?.length || 0)">Your Score</h2>
+            
+            <p>{{ score }} / {{ quizData?.questions?.length }}</p>
+
+            <!-- Retry & Go Back buttons -->
+            <div class="modal-buttons">
+                <button *ngIf="score < (quizData?.questions?.length || 0)" class="retry-btn" (click)="retryQuiz()">Retry</button>
+                <button class="okay-btn" (click)="closeModal()">Go Back to Quiz</button>
+            </div>
+        </div>
+    </div>
+
+</div>

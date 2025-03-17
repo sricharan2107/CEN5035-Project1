@@ -1,0 +1,59 @@
+
+<h2  style="align-items: center;">{{ categoryName }}</h2>
+<div class="container mt-4">
+    
+    <div class="row row-cols-4 g-4">
+      <div *ngFor="let sub of subCategories" class="col d-flex justify-content-center">
+        <div class="card text-center">
+
+          <img src="assets/cs.jpg" class="card-img-top" alt="Category Image">
+          <div class="card-body">
+            <h5 class="card-title">{{ sub.sub_category }}</h5>
+            <button (click)="goToQuizTopic(sub.sub_category)" class="btn btn-primary">Quiz Topics</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+
+
+
+
+
+
+  <!-- 
+
+  <div class="container mt-4">
+    <div class="row row-cols-4 g-4">
+
+
+      <div *ngFor="let tech of technologies" class="col d-flex justify-content-center">
+
+        <div class="card text-center">
+            <img [src]="tech.image" class="card-img-top" [alt]="tech.name" height="90%"/>
+
+
+          <div class="card-body">
+
+            <h5 class="card-title">{{ tech.name }}</h5>
+            <p class="card-text justify-content-center">{{ tech.description }}</p>
+            
+            <button  (click)="dothis(tech.name)" class="btn btn-primary">View Quizzes</button>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div> -->
+  <!-- <a href="#" class="btn btn-primary">View Quizzes</a> -->

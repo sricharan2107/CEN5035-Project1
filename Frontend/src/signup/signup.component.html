@@ -1,71 +1,96 @@
-<div class="Logo">SkillArcade</div>
+<div class="signup-component">
+  <div class="Logo">SkillArcade</div>
 
-<div class="signup-section">
-  <h2>Sign Up</h2>
+  <div class="signup-section">
+    <h2>Sign Up</h2>
+    <div *ngIf="successMessage" class="success-message">
+      {{ successMessage }}
+    </div>
   
-  <div *ngIf="successMessage" class="success-message">
-    {{ successMessage }}
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="firstName">First Name<span class="required">*</span></label>
+        <div *ngIf="signupForm.get('firstName')?.invalid && signupForm.get('firstName')?.touched">
+          First name is required.
+        </div>
+        <input id="firstName" formControlName="firstName" type="text" placeholder="Enter your first name" />
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name<span class="required">*</span></label>
+        <div *ngIf="signupForm.get('lastName')?.invalid && signupForm.get('lastName')?.touched">
+          Last name is required.
+        </div>
+        <input id="lastName" formControlName="lastName" type="text" placeholder="Enter your last name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email<span class="required">*</span></label>
+        <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+          Email is required.
+        </div>
+        <input id="email" formControlName="email" type="email" placeholder="Enter your email" />
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth<span class="required">*</span></label>
+        <div *ngIf="signupForm.get('dob')?.invalid && signupForm.get('dob')?.touched">
+          DOB is required.
+        </div>
+        <input id="dob" formControlName="dob" type="date" placeholder="mm/dd/yyyy" />
+      </div>
+      
+      <div class="form-group">
+        <label>Gender<span class="required">*</span></label>
+        
+        <div *ngIf="signupForm.get('gender')?.invalid && signupForm.get('gender')?.touched">
+          Select your gender.
+        </div>
+        
+        <label class="gender-option">
+          <input type="radio" id="male" formControlName="gender" value="male">
+          Male
+        </label>
+      
+        <label class="gender-option">
+          <input type="radio" id="female" formControlName="gender" value="female">
+          Female
+        </label>
+      
+        <label class="gender-option">
+          <input type="radio" id="other" formControlName="gender" value="other">
+          Other
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="username">Username<span class="required">*</span></label>
+        <div *ngIf="signupForm.get('username')?.invalid && signupForm.get('username')?.touched">
+          Username is required.
+        </div>
+        <input id="username" formControlName="username" type="text" placeholder="Enter your username" />
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password<span class="required">*</span></label>
+        <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
+          Password is required.
+        </div>
+        <input id="password" formControlName="password" type="password" placeholder="Enter your password" />
+      </div>
+      
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password<span class="required">*</span></label>
+        <div *ngIf="signupForm.get('confirmPassword')?.invalid && signupForm.get('confirmPassword')?.touched">
+          Confirm your password.
+        </div>
+        <input id="confirmPassword" formControlName="confirmPassword" type="password" placeholder="Confirm your password" />
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
   </div>
-
-  <div *ngIf="errorMessage" class="error-message">
-    {{ errorMessage }}
-  </div>
-
-  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
-    
-    <div class="form-group">
-      <label for="firstName">First Name<span class="required">*</span></label>
-      <div *ngIf="signupForm.get('firstName')?.invalid && signupForm.get('firstName')?.touched">
-        First name is required.
-      </div>
-      <input id="firstName" formControlName="firstName" type="text" placeholder="Enter your first name" />
-      
-    </div>
-
-    <div class="form-group">
-      <label for="lastName">Last Name<span class="required">*</span></label>
-      <div *ngIf="signupForm.get('lastName')?.invalid && signupForm.get('lastName')?.touched">
-        Last name is required.
-      </div>
-      <input id="lastName" formControlName="lastName" type="text" placeholder="Enter your last name" />
-      
-    </div>
-
-    <div class="form-group">
-      <label for="email">Email<span class="required">*</span></label>
-      <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
-        Email is required.
-      </div>
-      <input id="email" formControlName="email" type="email" placeholder="Enter your email" />
-      
-    </div>
-
-    <div class="form-group">
-      <label for="dob">Date of Birth<span class="required">*</span></label>
-      <div *ngIf="signupForm.get('dob')?.invalid && signupForm.get('dob')?.touched">
-        DOB is required.
-      </div>
-      <input id="dob" formControlName="dob" type="date" placeholder="mm/dd/yyyy" />
-      
-    </div>
-    <div class="form-group">
-      <label for="password">Password<span class="required">*</span></label>
-      <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
-        Password is required.
-      </div>
-      <input id="password" formControlName="password" type="password" placeholder="Enter your password" />
-    </div>
-    <div class="form-group">
-      <label for="password">Confirm Password<span class="required">*</span></label>
-      <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
-        Confirm your password.
-      </div>
-      <input id="password" formControlName="password" type="password" placeholder="Confirm your password" />
-    </div>
-
-    
-    
-
-    <button type="submit">Sign Up</button>
-  </form>
 </div>
